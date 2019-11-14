@@ -1,5 +1,9 @@
 package datastructure.LinkedList;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class LinkedList {
 
     Node head;
@@ -89,7 +93,7 @@ public class LinkedList {
 
         return prev;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Node n1=new Node(10);
         Node n2=new Node(20);
@@ -115,6 +119,10 @@ public class LinkedList {
         //linkedList.deleteFromBeginning();
     linkedList.deleteFromIndex(4);*/
     reverse(n1);
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        br.readLine();
+
 
     }
 }
