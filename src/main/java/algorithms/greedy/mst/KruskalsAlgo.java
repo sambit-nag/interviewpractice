@@ -1,4 +1,6 @@
-package algorithms.greedy;
+package algorithms.greedy.mst;
+
+import algorithms.greedy.Edge;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -54,6 +56,7 @@ public class KruskalsAlgo{
             if(find(sourceVertex,parent)!=find(destVertex,parent)){
                 union(sourceVertex,destVertex,parent);
                 mst+=cost;
+                System.out.print(""+sourceVertex+destVertex+"->");
 
             }
         }
@@ -72,7 +75,7 @@ public class KruskalsAlgo{
 
         int x=find(source,parent);
         int y=find(destination,parent);
-        parent[x]=y;
+        parent[y]=x;
 
     }
 
