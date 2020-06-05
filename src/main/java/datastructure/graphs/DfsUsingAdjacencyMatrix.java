@@ -44,6 +44,7 @@ public class DfsUsingAdjacencyMatrix {
 
         System.out.print(startingVertex + " ");
         visited[startingVertex]=true;
+       // int m=Integer.M
 
         for (int i=0;i<numOfVertices;i++){
             if (!visited[i]) {

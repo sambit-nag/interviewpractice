@@ -118,10 +118,9 @@ public class LinkedList {
        // linkedList.deleteFromEnd();
         //linkedList.deleteFromBeginning();
     linkedList.deleteFromIndex(4);*/
-    reverse(n1);
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        br.readLine();
+       ReverseLinkedList reverseLinkedList=new ReverseLinkedList();
+       reverseLinkedList.reverse(n1);
 
 
     }

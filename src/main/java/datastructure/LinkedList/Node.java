@@ -2,8 +2,8 @@ package datastructure.LinkedList;
 
 public class Node <T>{
 
-    private T data;
-    private Node next;
+    public T data;
+    public Node next;
 
 
     public Node(T data) {
